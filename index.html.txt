@@ -199,7 +199,7 @@
 
 		/* Align and style the "For Credit" and "Listener" cells */
 		td.enrollheader {
-			background-color:red;
+			background-color:white;
 			text-align:center;
 			font-weight:bold;
 		}
