@@ -194,12 +194,12 @@
 
 		/* Color green the text of currentlytaking rows */
 		tr.currentlytaking {
-			color:red;
+			color:green;
 		}
 
 		/* Align and style the "For Credit" and "Listener" cells */
 		td.enrollheader {
-			background-color:white;
+			background-color:red;
 			text-align:center;
 			font-weight:bold;
 		}
