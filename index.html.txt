@@ -15,7 +15,7 @@
 <html>
 <head>
 	<!-- The title shows up in the browser toolbar -->
-	<title>Dog's Homepage</title>
+	<title>REYOUF Homepage</title>
 </head>
 
 <body>
