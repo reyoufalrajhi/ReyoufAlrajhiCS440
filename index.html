@@ -1,19 +1,5 @@
 
-<!DOCTYPE html>
-
-<!--Here's a worked example of HTML and CSS from Lab 1!
-	HTML consists of a hierarchy of elements.
-	
-	Each element has an opening tag and (most of the time) a closing tag.
-	For example, the whole document is enclosed in the html element, delimited by the <html> and </html> tags.
-	You can also close tags immediately using a slash before the > symbol: A newline is represented by <br />.
-
-	Each tag can have attributes set as name="value" pairs.
-	For example, the image element needs a source URL for the image file: <img src="dog.jpg" />
--->
-
-<html>
-<head>
+<html><head>
 	<!-- The title shows up in the browser toolbar -->
 	<title>Dog's Homepage</title>
 </head>
@@ -55,7 +41,7 @@
 		<!--Tables can be used to group text or images into rows and columns-->
 		<table>
 			<!--Each <tr> is a row-->
-			<tr>
+			<tbody><tr>
 				<!--Each <th> or <td> is a cell.
 					The number of cells in a row determines the number of columns in the table.
 				-->
@@ -65,7 +51,7 @@
 			</tr>
 			<tr>
 				<!--A <td> or cell can span multiple columns using the colspan attribute-->
-				<td class="enrollheader" colspan=3>For Credit</td>
+				<td class="enrollheader" colspan="3">For Credit</td>
 			</tr>
 			<!--We give certain rows the "currentlytaking" class, so we can color them differently in a CSS rule-->
 			<tr class="currentlytaking">
@@ -84,7 +70,7 @@
 				<td>Fall 2013</td>
 			</tr>
 			<tr>
-				<td class="enrollheader" colspan=3>Listener</td>
+				<td class="enrollheader" colspan="3">Listener</td>
 			</tr>
 			<tr>
 				<td><a href="http://stellar.mit.edu/S/course/6/fa13/6.867/">6.867</a></td>
@@ -96,7 +82,7 @@
 				<td>Database Systems</td>
 				<td>Fall 2012</td>
 			</tr>
-		</table>
+		</tbody></table>
 	</div>
 
 	<div class="section" id="interests">
@@ -205,5 +191,5 @@
 		}
 
 	</style>
-</body>
-</html>
+
+</body></html>
