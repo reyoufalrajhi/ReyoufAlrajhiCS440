@@ -194,7 +194,7 @@
 
 		/* Color green the text of currentlytaking rows */
 		tr.currentlytaking {
-			color:green;
+			color:red;
 		}
 
 		/* Align and style the "For Credit" and "Listener" cells */
