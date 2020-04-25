@@ -1,151 +1,206 @@
 
-<!DOCTYPE html>
 
-<!--Here's a worked example of HTML and CSS from Lab 1!
-	HTML consists of a hierarchy of elements.
-	
-	Each element has an opening tag and (most of the time) a closing tag.
-	For example, the whole document is enclosed in the html element, delimited by the <html> and </html> tags.
-	You can also close tags immediately using a slash before the > symbol: A newline is represented by <br />.
 
-	Each tag can have attributes set as name="value" pairs.
-	For example, the image element needs a source URL for the image file: <img src="dog.jpg" />
--->
 
 <html>
 <head>
-	<!-- The title shows up in the browser toolbar -->
-	<title>Dog's Homepage</title>
+	
+	<title> Reyouf AlRajhi & Reem AlAhmadi Homepage</title>
+        
 </head>
 
+
 <body>
-	<!--A header for the page-->
-	<h1>Dog D. Dog</h1>
 
-	<!--My photo-->
-	<img id="photo" src="http://i.imgur.com/L34Fib6.jpg">	
+	
+	<h1> <CENTER> WELCOME TO OUR WEBSITE </CENTER></h1>
 
-	<!--Divs and spans can be used to logically and structurally organize your page
-		Here we use divs to separate different sections of the page: about, courses, interests and pet information
-		* divs are block elements and are separated by newlines or breaks in the page
-		* spans are inline elements and are displayed without newlines between them
-	-->
-
-	<!--Each div (and any other tag) can have a class and id.
-		The class can be shared with other tags.
-		The id is unique to this tag.
-		The class and id can be selected by CSS rules to style groups of elements differently.
-	-->
-	<div class="section" id="about">
+	<div class="about" id="about">
 		<!--An h2 header - smaller than the h1 header-->
-		<h2>About</h2>
-
-		<!--<p> tags are paragraphs have newlines before and after them-->
-		<p>Woof woof!</p>
-		<!--The <a> tag is a link.
-			The text between the <a> and </a> tags is the displayed text.
-			The href attribute has the link's target URL.-->
-		<p>Hi, I'm Dog. I love <a href="http://en.wikipedia.org/wiki/User_interface_design">User Interface Design</a>.</p>		
+		<h2>About us</h2>
+		<p>HELLO :)</p>
+	
+		<p> My Name is Reyouf Alrajhi <br> 
+                <p> My Name is Reem AlAhmadi <br>
+               <p> We are friends on same college and this is last semester :)) </p>		
 	</div>
+<script>
 
-	<div class="section" id="courses">
-		<h2>Courses</h2>
-		<p>Here are some courses I've taken:</p>
+function Passvalue() {
 
-		<!--Tables can be used to group text or images into rows and columns-->
-		<table>
-			<!--Each <tr> is a row-->
-			<tr>
-				<!--Each <th> or <td> is a cell.
-					The number of cells in a row determines the number of columns in the table.
-				-->
-				<th>Course Number</th>
-				<th>Course Title</th>
-				<th>Semester Taken</th>
-			</tr>
-			<tr>
-				<!--A <td> or cell can span multiple columns using the colspan attribute-->
-				<td class="enrollheader" colspan=3>For Credit</td>
-			</tr>
-			<!--We give certain rows the "currentlytaking" class, so we can color them differently in a CSS rule-->
-			<tr class="currentlytaking">
-				<td><a href="http://stellar.mit.edu/S/course/6/sp14/6.813/index.html">6.813</a></td>
-				<td>User Interface Design</td>
-				<td>Spring 2014</td>
-			</tr>			
-			<tr>
-				<td><a href="http://ai6034.mit.edu/fall12/index.php?title=Main_Page">6.034</a></td>
-				<td>Artificial Intelligence</td>
-				<td>Fall 2013</td>
-			</tr>
-			<tr>
-				<td><a href="http://stellar.mit.edu/S/course/6/fa13/6.006/">6.006</a></td>
-				<td>Introduction to Algorithms</td>
-				<td>Fall 2013</td>
-			</tr>
-			<tr>
-				<td class="enrollheader" colspan=3>Listener</td>
-			</tr>
-			<tr>
-				<td><a href="http://stellar.mit.edu/S/course/6/fa13/6.867/">6.867</a></td>
-				<td>Machine Learning</td>
-				<td>Fall 2013</td>
-			</tr>
-			<tr>
-				<td><a href="http://db.csail.mit.edu/6.830/index.php">6.830</a></td>
-				<td>Database Systems</td>
-				<td>Fall 2012</td>
-			</tr>
-		</table>
-	</div>
+var firstName= document.getElemntById("txt").value;
+localStorge.setItem("textvalue",firstName);
 
-	<div class="section" id="interests">
-		<h2>Interests</h2>
-		<!--Spans are displayed inline, but allow you to identify text in CSS rules-->
-		I am interested <span class="serious">HCI</span>, <span class="silly">memes</span>, and <span class="silly">youtube videos</span>.
-	</div>
+return false;
+}
 
-	<div class="section" id="petinfo">
-		<h2>Submit Pet Information</h2>
-		<p>Would love to know what kinds of pets you 'own' (you'll never own me). Submit below!</p>
+</script>
+ 
+	<div class="Homepage" id="Homepage">
+		<h2> Homepage </h2>
+		<p>  <strong> Please fill in the following form  </strong></p>
+               
+		
+<form action="resullt.html">
 
-		<!--A form allows the user/client to input information			
-			The 'action' attribute of the <form> is where the information should be sent when the user submits it.
-			Here a Python script on the 6.831 server just prints the submitted form information.-->
-		<form action="http://courses.csail.mit.edu/6.831/2013/handouts/lab1-html-css/reply.py" method="post">
-			<!--The form contains several <input> elements which receive info from the user.
-			Each <input> element has a 'type' attribute, which determines if it's a textbox, radio button, etc.-->
-			<label for="petname">Name:</label>
-			<input id="petname" type="text" name="petname"><br>
-			<label for="phylum">Phylum:</label>
-			<input id="phylum" type="text" name="phylum"><br>
-			<label for="gender">Gender:</label>
-			<input id="gender" type="text" name="gender"><br>
+<input id="name">
+<button type="button" onclick="TheName()">Submit</button>
+<h1 id="demo"></h1>
 
-			<!--The submit-type input is a button that sends the information as name:value pairs to the form's 'action'-->
-		  	<input type="submit" value="Submit">
-		</form>
-	</div>
+      </fieldset>
+
+		
+</form>
+<br><br>
+
+<fieldset>
+
+  <legend><strong>Choose your interests</strong></legend>
+  <div class="infirstborder">
+
+<br>
+Code: <input type="checkbox" id="Code"  onclick="PFunction()">
+
+<p id="textCode" style="display:none">Checkbox is CHECKED Code!</p>
+<br><br>
+Movies: <input type="checkbox" id="Movies"  onclick="PFunction()">
+
+<p id="textMovies" style="display:none">Checkbox is CHECKED Movies!</p>
+<br><br>
+Sports: <input type="checkbox" id="Sports"  onclick="PFunction()">
+
+<p id="textSports" style="display:none">Checkbox is CHECKED Sports!</p>
+<br><br>
+Cooking: <input type="checkbox" id="Cooking"  onclick="PFunction()">
+
+<p id="textCooking" style="display:none">Checkbox is CHECKED Cooking!</p>
+
+<br><br>
+<p> Your interest percent:</p>
+<p id="percentage"></p>
 
 
+<script>
+function PFunction() {
+  var Code = 0;
+  var Movies = 0;
+  var Sports = 0;
+  var Cooking = 0 ;
+  var percentage = 0 ;
+  
+  var checkBoxCode = document.getElementById("Code");
+  var textCode = document.getElementById("textCode");
+  if (checkBoxCode.checked == true){
+    //textCode.style.display = "block";
+    Code = 25 ;
+  } else {
+    textCode.style.display = "none";
+  }
+  
+  var checkBoxMovies = document.getElementById("Movies");
+  var textMovies = document.getElementById("textMovies");
+  
+  if (checkBoxMovies.checked == true){
+    //textMovies.style.display = "block";
+    Movies = 25 ;
+  } else {
+     textMovies.style.display = "none";
+  }
+  
+  
+  
+  var checkBoxSports = document.getElementById("Sports");
+  var textSports = document.getElementById("textSports");
+  
+  if (checkBoxSports.checked == true){
+    //textSports.style.display = "block";
+    Sports = 25;
+  } else {
+     textSports.style.display = "none";
+  }
+  
+  var checkBoxCooking = document.getElementById("Cooking");
+  var textCooking = document.getElementById("textCooking");
+  
+  if (checkBoxCooking.checked == true){
+    //textCooking.style.display = "block";
+    Cooking = 25;
+  } else {
+     textCooking.style.display = "none";
+  }
+  
+  percentage = Code + Movies + Sports + Cooking ;
+  document.getElementById("percentage").innerHTML = percentage;
+}
+</script>
+
+</div>
+
+   
+
+</fieldset>
+
+
+
+<br><br> 
+
+            <fieldset>
+       <legend><strong> What would you like to see?</strong></legend>
+            
+              
+<br>
+<div class="inSecborder">
+
+	<button onclick="CVPage()">CV Page </button>
+ <br><br>
+	<button onclick="MemePage()">Meme page</button>
+
+<script>
+function CVPage() {
+  location.replace("resullt.html")
+}
+
+function MemePage() {
+  location.replace("meme1.html")
+}
+function TheName() {
+  var text;
+  text = document.getElementById("name").value;
+  var str1 = "Hello, Welcome ";
+  var res = str1.concat(text);
+  document.getElementById("demo").innerHTML = res;
+}
+</script>
+</div>
+</fieldset>
+
+   
+	 
+                 
+	
 	<!--This is the style section.
 		It consists of CSS rules, which could also be included as a separate file.-->
 	<style>
+hl {
+  font-family: sans-serif;
+}
 		/* body tag selector: define a default font. Never use Comic Sans. */
 		body {
-			font-family: "Comic Sans MS";
+			background-color: #333;
+                        color:white;
+                        font-family: Arial, Helvetica, sans-serif;
 		}
 
 		/* .section class selector: set the font of all tags with class="section" */
-		.section {
-			font-family: arial;
+		.Homepage {
+			font-family: Arial,Helvetica,sans-serif;
 		}
 
 		/* h2 descendants of .section class: set a background color for all h2 text in sections */
-		.section h2 {
-			background-color: rgb(255,255,220);
+		.Homepage h2 {
+			background-color: OldLace;
 			font-family: Georgia;
-			color: maroon;
+			color: Gray;
 		}
 
 		/* #courses id with <a> tag selector:
